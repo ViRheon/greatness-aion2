@@ -1,0 +1,37 @@
+:root{--page-width:1024px;--header-h:72px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#020b15;color:#fff;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+a{color:inherit}
+.site{width:100%;display:flex;flex-direction:column;align-items:center}
+.screen{position:relative;width:min(100%,var(--page-width));margin:0 auto;line-height:0;scroll-margin-top:var(--header-h)}
+.screen-image{display:block;width:100%;height:auto;margin:0;padding:0;border:0;user-select:none;-webkit-user-drag:none}
+.hotspot{position:absolute;z-index:5;line-height:normal}
+.hotspot>a{display:block;width:100%;height:100%;border-radius:10px}
+.hotspot>a:focus-visible{outline:2px solid #7fd3ff;outline-offset:3px}
+/* Exact interaction zones for the 1024px reference composition. */
+.hotspot-nav{top:0;height:72px}
+.community-nav{left:276px;width:100px}
+.features-nav{left:394px;width:112px}
+.aion-nav{left:527px;width:61px}
+.join-nav{left:607px;width:105px}
+.hotspot-header-discord{top:16px;right:145px;width:141px;height:42px}
+.hotspot-discord{left:302px;top:400px;width:253px;height:54px}
+.hotspot-more{left:567px;top:401px;width:149px;height:54px}
+.join-discord{left:64px;top:196px;width:261px;height:53px}
+.join-question{left:339px;top:196px;width:153px;height:53px}
+.mobile-header,.mobile-menu{display:none}
+@media (max-width:700px){
+  :root{--header-h:62px}
+  body{background:#020b15}
+  .screen{width:100%;scroll-margin-top:var(--header-h)}
+  .mobile-header{position:fixed;z-index:50;display:flex;align-items:center;justify-content:space-between;top:0;left:0;right:0;height:62px;padding:0 18px;background:rgba(2,11,21,.94);border-bottom:1px solid rgba(110,190,244,.26);backdrop-filter:blur(10px)}
+  .mobile-logo{display:grid;place-items:center;width:38px;height:38px;border:1px solid rgba(235,247,255,.85);border-radius:50%;text-decoration:none;font-family:Georgia,serif;font-size:28px;line-height:1}
+  .mobile-menu-button{border:0;background:none;color:#fff;font-size:27px;line-height:1;cursor:pointer;padding:5px}
+  .mobile-menu{position:fixed;z-index:49;top:62px;left:0;right:0;display:flex;flex-direction:column;background:rgba(2,12,23,.98);border-bottom:1px solid rgba(110,190,244,.26);transform:translateY(-120%);transition:transform .25s ease}
+  .mobile-menu.open{transform:translateY(0)}
+  .mobile-menu a{padding:15px 20px;text-decoration:none;color:#e9f4ff;border-bottom:1px solid rgba(110,190,244,.12);font-size:14px}
+  .hero{margin-top:62px}
+  .hotspot-nav,.hotspot-header-discord,.hotspot-discord,.hotspot-more,.join-discord,.join-question{display:none}
+  /* The reference is preserved as the desktop artwork; on phones, scrolling remains natural and the menu provides navigation. */
+}
