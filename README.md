@@ -1,15 +1,11 @@
-# GREATNESS — AION 2
+# GREATNESS AION 2
 
-Статичний односторінковий сайт для GitHub Pages.
+Static GitHub Pages site matching the supplied GREATNESS AION 2 reference composition.
 
-## Публікація
-
-1. Створи репозиторій GitHub або відкрий існуючий `greatness-aion2`.
-2. Завантаж у корінь репозиторію **весь вміст цієї папки**, включно з папкою `assets`.
-3. У **Settings → Pages** обери:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/ (root)`
-4. Збережи налаштування та відкрий адресу GitHub Pages.
+## GitHub Pages
+1. Upload **all files inside this folder** to the root of the `greatness-aion2` repository.
+2. Make sure `index.html` is in the repository root.
+3. In GitHub: Settings → Pages → Deploy from a branch → `main` / root.
 
 Discord: https://discord.gg/B3jzsUFMYZ
+Email: greatness.aion2@gmail.com
