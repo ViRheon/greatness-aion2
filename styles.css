@@ -1,5 +1,5 @@
 :root {
-  --site-width: 1440px;
+  --site-width: 1024px;
   --page-bg: #010912;
   --edge-blue: rgba(28, 91, 139, 0.18);
   --glow: rgba(70, 160, 240, 0.22);
@@ -61,7 +61,7 @@ body::before {
 
 /*
   Важливо:
-  сам сайт завжди тримається у своїх рідних 1440px.
+  сам сайт завжди тримається у своїх рідних 1024px.
   На великих моніторах він НЕ розтягується,
   тому графіка залишається чіткою.
 */
@@ -81,7 +81,7 @@ body::before {
 
 .visual__image {
   display: block;
-  width: 1440px;
+  width: 1024px;
   max-width: 100%;
   height: auto;
   margin: 0;
@@ -112,7 +112,7 @@ body::before {
 
 /* =========================================
    HEADER
-   Hero source: 1440 × 552
+   Hero source: 1024 × 552
    ========================================= */
 
 .hotspot--community {
@@ -170,7 +170,7 @@ body::before {
 
 /* =========================================
    JOIN SECTION
-   Source: 1440 × 325
+   Source: 1024 × 325
    ========================================= */
 
 .hotspot--join-discord {
@@ -191,20 +191,20 @@ body::before {
    TABLET / MOBILE
    ========================================= */
 
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   body {
     background: #020b15;
   }
 
   .visual {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1024px;
     box-shadow: none;
   }
 
   .visual__image {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1024px;
   }
 }
 
