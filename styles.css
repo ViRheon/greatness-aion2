@@ -1,5 +1,4 @@
 :root {
-  --page-width: 100%;
   --header-h: 72px;
 }
 
@@ -13,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background: #020b15;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -25,16 +25,17 @@ a {
 
 .site {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .screen {
   position: relative;
+  display: block;
   width: 100%;
   max-width: none;
   margin: 0;
+  padding: 0;
   line-height: 0;
   scroll-margin-top: var(--header-h);
 }
@@ -60,18 +61,15 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
 }
 
-.hotspot > a:focus-visible {
-  outline: 2px solid #7fd3ff;
-  outline-offset: 3px;
-}
+/* =========================
+   HEADER
+   ========================= */
 
-/* Navigation */
 .hotspot-nav {
   top: 0;
-  height: 72px;
+  height: 10%;
 }
 
 .community-nav {
@@ -80,7 +78,7 @@ a {
 }
 
 .features-nav {
-  left: 39%;
+  left: 38.5%;
   width: 11%;
 }
 
@@ -90,71 +88,70 @@ a {
 }
 
 .join-nav {
-  left: 59.5%;
+  left: 59.3%;
   width: 10%;
 }
 
-/* Header Discord */
 .hotspot-header-discord {
-  top: 16px;
+  top: 2%;
   right: 14%;
   width: 14%;
-  height: 42px;
+  height: 6%;
 }
 
-/* Hero buttons */
+/* =========================
+   HERO
+   ========================= */
+
 .hotspot-discord {
   left: 29.5%;
-  top: 400px;
+  top: 81%;
   width: 24.7%;
-  height: 54px;
+  height: 11%;
 }
 
 .hotspot-more {
   left: 55.4%;
-  top: 401px;
+  top: 81%;
   width: 14.5%;
-  height: 54px;
+  height: 11%;
 }
 
-/* Join section buttons */
+/* =========================
+   JOIN
+   ========================= */
+
 .join-discord {
   left: 6.25%;
-  top: 196px;
+  top: 52%;
   width: 25.5%;
-  height: 53px;
+  height: 14%;
 }
 
 .join-question {
   left: 33.1%;
-  top: 196px;
-  width: 14.9%;
-  height: 53px;
+  top: 52%;
+  width: 15%;
+  height: 14%;
 }
+
+/* =========================
+   MOBILE
+   ========================= */
 
 .mobile-header,
 .mobile-menu {
   display: none;
 }
 
-/* =========================================
-   MOBILE
-   ========================================= */
-
 @media (max-width: 700px) {
+
   :root {
     --header-h: 62px;
   }
 
   body {
     background: #020b15;
-  }
-
-  .screen {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    scroll-margin-top: var(--header-h);
   }
 
   .mobile-header {
@@ -166,6 +163,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     height: 62px;
     padding: 0 18px;
     background: rgba(2, 11, 21, 0.94);
@@ -204,6 +202,7 @@ a {
     right: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
     background: rgba(2, 12, 23, 0.98);
     border-bottom: 1px solid rgba(110, 190, 244, 0.26);
     transform: translateY(-120%);
