@@ -1,0 +1,142 @@
+:root {
+  --page-bg: #020b15;
+  --glow: rgba(95, 181, 255, 0.55);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--page-bg);
+  color: #fff;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body::selection {
+  background: rgba(84, 166, 255, 0.35);
+}
+
+.page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  scroll-margin-top: 1px;
+}
+
+.visual__image {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Transparent clickable overlays keep the artwork untouched while making the
+   buttons/navigation inside the supplied artwork functional. Positions are
+   percentage based, so they scale together with the 1024px source artwork. */
+.hotspot {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  border-radius: 10px;
+  outline: none;
+}
+
+.hotspot:focus-visible {
+  box-shadow: 0 0 0 3px rgba(151, 215, 255, 0.95), 0 0 24px var(--glow);
+}
+
+/* Header: source is 1024px wide and 552px tall */
+.hotspot--community {
+  left: 27.6%;
+  top: 4.7%;
+  width: 10.1%;
+  height: 5.0%;
+}
+
+.hotspot--features-nav {
+  left: 39.1%;
+  top: 4.7%;
+  width: 10.8%;
+  height: 5.0%;
+}
+
+.hotspot--aion-nav {
+  left: 51.2%;
+  top: 4.7%;
+  width: 7.0%;
+  height: 5.0%;
+}
+
+.hotspot--join-nav {
+  left: 58.9%;
+  top: 4.7%;
+  width: 11.0%;
+  height: 5.0%;
+}
+
+.hotspot--header-discord {
+  left: 71.0%;
+  top: 2.7%;
+  width: 14.5%;
+  height: 7.1%;
+}
+
+/* Hero CTAs */
+.hotspot--hero-discord {
+  left: 29.7%;
+  top: 73.5%;
+  width: 24.8%;
+  height: 11.2%;
+}
+
+.hotspot--hero-more {
+  left: 55.4%;
+  top: 73.5%;
+  width: 14.3%;
+  height: 11.2%;
+}
+
+/* Join section: source is 1024px wide and 325px tall */
+.hotspot--join-discord {
+  left: 6.1%;
+  top: 62.1%;
+  width: 25.4%;
+  height: 17.6%;
+}
+
+.hotspot--question {
+  left: 33.0%;
+  top: 62.1%;
+  width: 15.0%;
+  height: 17.6%;
+}
+
+/* On small screens the artwork stays proportional and the clickable zones
+   continue to scale with it. This keeps the composition intact instead of
+   introducing distorted backgrounds or stretched sections. */
+@media (max-width: 700px) {
+  .hotspot {
+    border-radius: 7px;
+  }
+}
