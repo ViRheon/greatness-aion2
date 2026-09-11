@@ -2,7 +2,7 @@
   <img src="assets/section-hero.png" alt="GREATNESS — AION 2 Ukrainian Community" width="100%">
 </div>
 
-
+<div align="center">
 <a href="https://virheon.github.io/greatness-aion2/">
   <img src="https://img.shields.io/badge/🌐%20Відкрити%20сайт-GREATNESS-168cff?style=for-the-badge&labelColor=061525" alt="Відкрити сайт">
 </a>
