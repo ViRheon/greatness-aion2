@@ -1,29 +1,15 @@
-# GREATNESS · AION 2
+# GREATNESS — AION 2
 
-Статична сторінка-візитка української спільноти GREATNESS.
+Статичний односторінковий сайт для GitHub Pages.
 
-## Що завантажувати на GitHub
+## Публікація
 
-У репозиторій потрібно завантажити весь вміст цієї папки:
+1. Створи репозиторій GitHub або відкрий існуючий `greatness-aion2`.
+2. Завантаж у корінь репозиторію **весь вміст цієї папки**, включно з папкою `assets`.
+3. У **Settings → Pages** обери:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/ (root)`
+4. Збережи налаштування та відкрий адресу GitHub Pages.
 
-- `index.html`
-- `styles.css`
-- `assets/hero-aion2.png`
-- `assets/greatness-mark.png`
-
-## Як замінити логотип
-
-У папці `assets` замініть файл `greatness-mark.png` на свою картинку з таким самим ім'ям.
-
-Або, якщо ваша картинка має іншу назву, змініть у `index.html` цей рядок:
-
-```html
-<img src="assets/greatness-mark.png" alt="GREATNESS" class="brand-mark">
-```
-
-## GitHub Pages
-
-Публікація: `main` branch, `/ (root)`.
-
-Очікувана адреса:
-`https://virheon.github.io/greatness-aion2/`
+Discord: https://discord.gg/B3jzsUFMYZ

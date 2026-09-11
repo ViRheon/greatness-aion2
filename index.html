@@ -4,129 +4,152 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GREATNESS — українська спільнота AION 2</title>
-  <meta name="description" content="GREATNESS — українська спільнота гравців AION 2. Данжі, рейди, PvP, івенти, пошук груп, допомога новачкам, гайди та спілкування в Discord.">
-  <meta name="keywords" content="AION 2, AION 2 Україна, українська гільдія AION 2, українці AION 2, GREATNESS, Discord AION 2, спільнота AION 2">
-  <meta name="theme-color" content="#07111f">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="GREATNESS — українська спільнота AION 2">
-  <meta property="og:description" content="Українська спільнота гравців AION 2: спільна гра, PvP та PvE, пошук напарників, досвід і нормальна атмосфера.">
-  <meta property="og:locale" content="uk_UA">
-  <link rel="canonical" href="https://virheon.github.io/greatness-aion2/">
-  <link rel="preload" as="image" href="assets/hero-bg.jpg">
+  <meta name="description" content="GREATNESS — українська спільнота гравців AION 2. Напарники, PvP, PvE, рейди, івенти та дружня атмосфера.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"GREATNESS",
-    "url":"https://virheon.github.io/greatness-aion2/",
-    "description":"Українська спільнота гравців AION 2.",
-    "sameAs":["https://discord.gg/B3jzsUFMYZ"]
-  }
-  </script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="GREATNESS AION 2">
-      <span class="brand-symbol" aria-hidden="true">G</span>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="GREATNESS — на головну">
+      <span class="brand-mark" aria-hidden="true"><span>G</span></span>
       <span class="brand-copy">
         <strong>GREATNESS</strong>
-        <small>AION 2 · UA</small>
+        <small>AION 2 · UA COMMUNITY</small>
       </span>
     </a>
-    <nav class="nav" aria-label="Навігація">
-      <a href="#about">Про спільноту</a>
-      <a href="#what">Що на тебе чекає</a>
+
+    <nav class="main-nav" aria-label="Основна навігація">
+      <a href="#community">Про спільноту</a>
+      <a href="#features">Що на тебе чекає</a>
+      <a href="#aion">AION 2</a>
       <a href="#join">Як приєднатися</a>
     </nav>
-    <a class="top-discord" href="https://discord.gg/B3jzsUFMYZ" target="_blank" rel="noopener">Discord ↗</a>
+
+    <div class="header-actions">
+      <a class="discord-btn discord-btn--small" href="https://discord.gg/B3jzsUFMYZ" target="_blank" rel="noreferrer">
+        <span class="discord-glyph">◉</span>
+        Приєднатися
+      </a>
+      <button class="lang-btn" type="button" aria-expanded="false">◉ UA <span>⌄</span></button>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">☰</button>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-art" aria-hidden="true"></div>
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-content">
+    <section class="hero" id="community">
+      <div class="hero-art hero-art--left" aria-hidden="true"></div>
+      <div class="hero-art hero-art--right" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
         <div class="eyebrow">УКРАЇНСЬКА СПІЛЬНОТА · AION 2</div>
         <h1>GREATNESS</h1>
-        <div class="hero-rule"></div>
-        <p class="hero-lead">Greatness - українська спільнота гравців із великим досвідом у ММО.</p>
-        <p class="hero-text">Запрошуємо тебе стати частиною дружнього ком’юніті, де можна знайти напарників, отримати пораду, обговорити механіки гри або просто гарно провести час 😊</p>
+        <div class="ornament"><span></span></div>
+        <h2>Українська спільнота гравців із<br>великим досвідом у ММО.</h2>
+        <p>Запрошуємо тебе стати частиною дружнього ком’юніті,<br class="desktop"> де можна знайти напарників, отримати пораду,<br class="desktop"> обговорити механіки гри або просто гарно провести час 😊</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="https://discord.gg/B3jzsUFMYZ" target="_blank" rel="noopener">Приєднатися до Discord <span>↗</span></a>
-          <a class="button button-ghost" href="#what">Що на тебе чекає</a>
-        </div>
-        <div class="hero-tags" aria-label="Основні напрямки">
-          <span>Активна спільнота</span>
-          <span>PvP · PvE</span>
-          <span>Гайди та поради</span>
-          <span>AION 2 · UA</span>
+          <a class="btn btn-primary" href="https://discord.gg/B3jzsUFMYZ" target="_blank" rel="noreferrer">
+            <span class="discord-glyph">◉</span> Приєднатися до Discord <span class="arrow">→</span>
+          </a>
+          <a class="btn btn-ghost" href="#features">Дізнатися більше <span>⌄</span></a>
         </div>
       </div>
     </section>
 
-    <section class="intro section" id="about">
-      <div class="section-heading">
-        <div>
-          <div class="eyebrow dark">ПРО GREATNESS</div>
-          <h2>Greatness - українська спільнота гравців із великим досвідом у ММО.</h2>
+    <section class="features section-dark" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <h2>ЩО НА ТЕБЕ ЧЕКАЄ</h2>
+          <div class="heading-line"><i></i></div>
         </div>
-        <span class="section-index">01</span>
-      </div>
-      <div class="intro-copy">
-        <p>Запрошуємо тебе стати частиною дружнього ком’юніті, де можна знайти напарників, отримати пораду, обговорити механіки гри або просто гарно провести час 😊</p>
-      </div>
-    </section>
 
-    <section class="what section-dark" id="what">
-      <div class="section-heading narrow">
-        <div>
-          <div class="eyebrow">GREATNESS · AION 2</div>
-          <h2>🎮 Що на тебе чекає:</h2>
-        </div>
-        <span class="section-index">02</span>
-      </div>
-      <div class="feature-grid">
-        <article class="feature"><div class="feature-icon">💬</div><div><h3>Активна та жива спільнота</h3><p>Відкрита для всіх українців та іноземних друзів.</p></div></article>
-        <article class="feature"><div class="feature-icon">⚔️</div><div><h3>Данжі, рейди, PvP, івенти</h3><p>Та інші спільні активності.</p></div></article>
-        <article class="feature"><div class="feature-icon">🔎</div><div><h3>Зручний пошук груп, друзів та напарників</h3><p>Для комфортної гри.</p></div></article>
-        <article class="feature"><div class="feature-icon">🆘</div><div><h3>Допомога новачкам</h3><p>Обмін досвідом і реалізація досвідчених гравців.</p></div></article>
-        <article class="feature"><div class="feature-icon">📚</div><div><h3>Досвід гравців з Тайваню</h3><p>Корисна інформація, поради, гайди та обговорення AION 2.</p></div></article>
-        <article class="feature"><div class="feature-icon">🤝</div><div><h3>Дружня атмосфера</h3><p>Без зайвого тиску та токсичності.</p></div></article>
-      </div>
-    </section>
-
-    <section class="release section">
-      <div class="release-card">
-        <div class="release-mark" aria-hidden="true"><span>AION</span><b>2</b></div>
-        <div class="release-copy">
-          <div class="eyebrow dark">AION 2</div>
-          <h2>😉 Якщо AION 2 вже є у твоїх планах і ти шукаєш українських гравців —</h2>
-          <p>приєднуйся до GREATNESS та зустрічаємо реліз гри разом з нами! 🇺🇦</p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">✦</div>
+            <div><h3>Активна та жива спільнота</h3><p>Відкрита для всіх українців та іноземних друзів;</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">⚔</div>
+            <div><h3>Данжі, рейди, PvP, івенти</h3><p>та інші спільні активності;</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">♟</div>
+            <div><h3>Зручний пошук груп</h3><p>друзів та напарників<br>для комфортної гри;</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">SOS</div>
+            <div><h3>Допомога новачкам</h3><p>обмін досвідом і реалізація<br>досвідчених гравців;</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">▣</div>
+            <div><h3>Досвід гравців з Тайваню</h3><p>Корисна інформація, поради,<br>гайди та обговорення AION 2.</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">≋</div>
+            <div><h3>Дружня атмосфера</h3><p>без зайвого тиску<br>та токсичності.</p></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="join section" id="join">
-      <div class="join-card">
-        <div class="join-left">
-          <div class="eyebrow">ЯК ПРИЄДНАТИСЯ</div>
-          <h2>Приєднуйся, познайомимось, видамо відповідну роль.</h2>
-          <p>В спільноту додаємо після короткого знайомства - розкажемо про нас, ти поділишся своїми цілями та планами, і разом будемо брати топи AION 2.</p>
+    <section class="aion-banner" id="aion">
+      <div class="aion-art" aria-hidden="true"></div>
+      <div class="container aion-inner">
+        <div class="aion-copy">
+          <div class="small-label">AION 2</div>
+          <h2>РАЗОМ ДО НОВИХ ВЕРШИН</h2>
+          <div class="aion-divider"></div>
+          <p>😉 Якщо AION 2 вже є у твоїх планах і ти шукаєш українських гравців —<br class="desktop">
+            приєднуйся до GREATNESS та зустрічаємо реліз гри разом з нами! 🇺🇦</p>
         </div>
-        <div class="join-right">
-          <div class="discord-label">Наш Discord</div>
-          <div class="discord-url">discord.gg/B3jzsUFMYZ</div>
-          <a class="button button-primary" href="https://discord.gg/B3jzsUFMYZ" target="_blank" rel="noopener">Зайти в Discord <span>↗</span></a>
+        <div class="aion-wordmark" aria-label="AION 2">AION<em>2</em></div>
+      </div>
+    </section>
+
+    <section class="join section-dark" id="join">
+      <div class="join-art" aria-hidden="true"></div>
+      <div class="container join-inner">
+        <div class="join-copy">
+          <div class="small-label">ЯК ПРИЄДНАТИСЯ</div>
+          <h2>СТАНЬ ЧАСТИНОЮ GREATNESS</h2>
+          <p>Приєднуйся, познайомимось, видамо відповідну роль.<br>
+          В спільноту додаємо після короткого знайомства — розкажемо про нас,<br>
+          ти поділишся своїми цілями та планами, і разом будемо брати топи AION 2.</p>
+          <div class="join-actions">
+            <a class="btn btn-primary" href="https://discord.gg/B3jzsUFMYZ" target="_blank" rel="noreferrer"><span class="discord-glyph">◉</span> Приєднатися до Discord <span class="arrow">→</span></a>
+            <a class="btn btn-ghost" href="mailto:greatness.aion2@gmail.com">◌ &nbsp;Є питання?</a>
+          </div>
+        </div>
+
+        <div class="join-card">
+          <div class="join-emblem">✧</div>
+          <div class="join-card-copy">
+            <span>ГРАВЦІ</span>
+            <span>ДРУЗІ</span>
+            <span>РОЗВИТОК</span>
+            <span>ПЕРЕМОГИ</span>
+          </div>
+          <div class="join-card-caption">БІЛЬШЕ НІЖ ГІЛЬДІЯ<br>ЦЕ СПІЛЬНОТА</div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div><strong>GREATNESS</strong><span> · AION 2 · Українська спільнота</span></div>
-    <a href="https://discord.gg/B3jzsUFMYZ" target="_blank" rel="noopener">Discord ↗</a>
+  <footer class="site-footer">
+    <div class="footer-art" aria-hidden="true"></div>
+    <div class="container footer-inner">
+      <a class="brand brand--footer" href="#top">
+        <span class="brand-mark" aria-hidden="true"><span>G</span></span>
+        <span class="brand-copy"><strong>GREATNESS</strong><small>AION 2 · UA COMMUNITY</small></span>
+      </a>
+      <div class="footer-tagline">Разом ми сильніші. 🇺🇦</div>
+      <div class="footer-aion"><strong>AION 2</strong><span>FLY HIGHER TOGETHER</span></div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
